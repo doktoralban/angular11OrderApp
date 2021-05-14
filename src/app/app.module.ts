@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HotelinfocardsComponent } from './hotelinfocards/hotelinfocards.component';
 import { OurteamComponent } from './ourteam/ourteam.component';
+import { OrdersComponent } from './orders/orders.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { OurteamComponent } from './ourteam/ourteam.component';
     NavbarComponent,
     CarouselComponent,
     HotelinfocardsComponent,
-    OurteamComponent
+    OurteamComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

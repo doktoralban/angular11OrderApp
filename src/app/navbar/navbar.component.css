@@ -1,11 +1,18 @@
 * {
     /*box-sizing: inherit;*/
   }
+   
+ 
   
   *:before, *:after {
     /*box-sizing: inherit;*/
   }
   
+   .logo {
+    content: url( "../../assets/images/a.turkerphoto.jpg")
+  }
+
+
   span {
     font-style: inherit;
     font-weight: inherit;
