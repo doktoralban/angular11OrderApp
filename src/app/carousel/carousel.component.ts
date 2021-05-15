@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AlertifyjsService} from '../Services/alertifyjs.service';
+
 
 @Component({
   selector: 'app-carousel',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alertify: AlertifyjsService) { }
 
   ngOnInit(): void {
   }
+
+  msgSuccess(message: string)
+  {
+    this.alertify.success(message);
+  }
+  msgWarning(message: string)
+  {
+    this.alertify.warning(message);
+  }
+  msgError(message: string)
+  {
+    this.alertify.error(message);
+  }
+  prompt(title: string, message: string, defvalue: string)
+  {    
+   this.alertify.prompt(title,message,defvalue);
+
+  }
+  confirmX(message: string)
+  {
+    this.alertify.confirm(message);
+  }
+
 
 }

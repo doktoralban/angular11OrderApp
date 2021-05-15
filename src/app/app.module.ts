@@ -11,6 +11,13 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { HotelinfocardsComponent } from './hotelinfocards/hotelinfocards.component';
 import { OurteamComponent } from './ourteam/ourteam.component';
 import { OrdersComponent } from './orders/orders.component';
+import { ProductsComponent } from './products/products.component';
+import { ItemsComponent } from './items/items.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { CustomersComponent } from './customers/customers.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { ShippersComponent } from './shippers/shippers.component';
+import { AlertifyjsService } from './Services/alertifyjs.service';
 
 
 @NgModule({
@@ -23,13 +30,19 @@ import { OrdersComponent } from './orders/orders.component';
     CarouselComponent,
     HotelinfocardsComponent,
     OurteamComponent,
-    OrdersComponent
+    OrdersComponent,
+    ProductsComponent,
+    ItemsComponent,
+    CategoriesComponent,
+    CustomersComponent,
+    EmployeesComponent,
+    ShippersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AlertifyjsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
